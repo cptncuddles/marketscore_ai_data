@@ -7,8 +7,7 @@ import time
 #this is when we want to view the dataframes in the terminal
 #pd.set_option('display.max_columns', None)
 
-json_files = glob.glob("C:\\Users\\17197\\Documents\\Coding Projects\\Market Score Data\\MarketScore Ticker\\*json")
-test_file = ["C:\\Users\\17197\\Documents\\Coding Projects\\Market Score Data\\MarketScore Ticker\\MARKETSCORE-2024-05-01-1.json"]
+json_files = glob.glob("file_path\\*json")
 
 #This function is used to extract the file name for reuse upon export
 def pull_name(string):
@@ -105,7 +104,7 @@ def json_to_csv_converter(files):
             combined_marketscore_df.drop(columns='count', inplace=True)
             names = [pull_name(file)]
             for name in names:
-                combined_marketscore_df.to_csv(f"C:\\Users\\17197\\Documents\\Coding Projects\\Market Score Data\\MarketScore Ticker\\{name}.csv", index=False)
+                combined_marketscore_df.to_csv(f"file_path\\{name}.csv", index=False)
 #a performance timer left in for future optimization testing
     toc = time.perf_counter()
     print(f"Completed function in {toc - tic:0.4f} second")
