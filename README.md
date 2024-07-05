@@ -38,4 +38,8 @@ Once the helper functions process and return the separate dataframes they are re
 Following the merging this *temporary* field is dropped and the file is processed for export to disk.
 
 **All of these scripts will further be optimized to ingest from a designated API and to export to a remote datawarehouse for long term storage and for future
-analysis/use by whichever AI model the Product Owner decides upon.**
+analysis/use by whichever AI model the Product Owner decides upon.**[^1]
+
+[^1]: The first two files: **Data Cleaning** and **Data Cleaning Report** were the first iterations of this project and will *not* be used in final production.
+
+
