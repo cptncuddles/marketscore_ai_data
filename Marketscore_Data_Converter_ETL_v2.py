@@ -7,8 +7,8 @@ import time
 #this is when we want to view the dataframes in the terminal
 #pd.set_option('display.max_columns', None)
 
-json_files = glob.glob("C:\\Users\\17197\\Documents\\Coding Projects\\Market Score Data\\MarketScore Ticker\\*json")
-test_file = ["C:\\Users\\17197\\Documents\\Coding Projects\\Market Score Data\\MarketScore Ticker\\MARKETSCORE-2024-05-01-1.json"]
+json_files = glob.glob("file_path\\*json")
+test_file = ["file_path\\MARKETSCORE-2024-05-01-1.json"]
 
 #This function is used to extract the file name for reuse upon export
 def pull_name(string):
