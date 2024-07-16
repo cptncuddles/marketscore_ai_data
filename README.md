@@ -37,6 +37,8 @@ databases back together. One helper function, **meta_data_cleaner**, did a major
 Once the helper functions process and return the separate dataframes they are ready to be merged on the newly created field 'counts'. 
 Following the merging this *temporary* field is dropped and the file is processed for export to disk.
 
+**v2 is the latest production file being deployed**
+
 **All of these scripts will further be optimized to ingest from a designated API and to export to a remote datawarehouse for long term storage and for future
 analysis/use by whichever AI model the Product Owner decides upon.**[^1]
 
