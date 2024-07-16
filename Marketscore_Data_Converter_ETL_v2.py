@@ -114,7 +114,7 @@ def json_to_csv_converter(files):
             combined_marketscore_df['time'] = pd.to_datetime(combined_marketscore_df['time'], format="%H:%M").dt.time
             names = [pull_name(file)]
             for name in names:
-                combined_marketscore_df.to_csv(f"C:\\Users\\17197\\Documents\\Coding Projects\\Market Score Data\\MarketScore Ticker\\{name}.csv", index=False)
+                combined_marketscore_df.to_csv(f"file_path\\{name}.csv", index=False)
 #current file is csv format with zero index, but can be switched to parquet or even back to json. file type can be determined once a ML structure is decided upon
 #a performance timer left in for future optimization testing
     toc = time.perf_counter()
