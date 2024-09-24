@@ -7,8 +7,8 @@ import time
 #this is when we want to view the dataframes in the terminal
 #pd.set_option('display.max_columns', None)
 
-test_file = "C:\\Users\\17197\\Documents\\Coding Projects\\Market Score Data\\Trades Data\\incoming_trade_files\\ES-2024-05-22-1-results.json"
-directory = glob.glob("C:\\Users\\17197\\OneDrive\\Documents\\Coding Projects\\Market Score Data\\Trades Data\\incoming_trade_files\\*.json")
+test_file = "C:FILE LOCATION\\ES-2024-05-22-1-results.json"
+directory = glob.glob("C:FILE LOCATION\\*.json")
 
 def pull_name(string):
     name_list = string.split('\\')
@@ -47,7 +47,7 @@ def trades_cleaner(dir):
             names = [pull_name(file)]
 #reusing the naming function for export
             for name in names:
-                full_df.to_csv(f"C:\\Users\\17197\\OneDrive\\Documents\\Coding Projects\\Market Score Data\\Trades Data\\outgoing_trade_files\\{name}.csv", index=False)
+                full_df.to_csv(f"C:FILE LOCATION\\{name}.csv", index=False)
     toc = time.perf_counter()
     print(f"Completed function in {toc - tic:0.4f} second")
 
