@@ -154,17 +154,11 @@ def trades_converter(files):
 
 
 #this pulls all data from local directories to import for cleaning
-mscounts_data = glob.glob("C:\\Users\\17197\\OneDrive\\Documents\\Coding Projects\\Market Score Data\\MSCounts Ticker\\*json")
-ticker_data = glob.glob("C:\\Users\\17197\\OneDrive\\Documents\\Coding Projects\\Market Score Data\\Individual Stock Ticker\\*.json")
-marketscore_data = glob.glob("C:\\Users\\17197\\OneDrive\\Documents\\Coding Projects\\Market Score Data\\MarketScore Ticker\\*json")
-trades_data = glob.glob("C:\\Users\\17197\\OneDrive\\Documents\\Coding Projects\\Market Score Data\\Trades Data\\incoming_trade_files\\*.json")
-#test dataset
-'''
-mscounts_test = glob.glob("C:\\Users\\17197\\OneDrive\\Documents\\Coding Projects\\Market Score Data\\Test Data\\mscounts test\\*.json")
-ticker_test = glob.glob("C:\\Users\\17197\\OneDrive\\Documents\\Coding Projects\\Market Score Data\\Test Data\\individual ticker test\\*.json")
-marketscore_test = glob.glob("C:\\Users\\17197\\OneDrive\\Documents\\Coding Projects\\Market Score Data\\Test Data\\marketscore test\\*.json")
-trades_test = glob.glob("C:\\Users\\17197\\OneDrive\\Documents\\Coding Projects\\Market Score Data\\Test Data\\trades test\\*.json")
-'''
+mscounts_data = glob.glob("C:FILE LOCATION\\*json")
+ticker_data = glob.glob("C:FILE LOCATION\\*.json")
+marketscore_data = glob.glob("C:FILE LOCATION\\*json")
+trades_data = glob.glob("C:FILE LOCATION\\*.json")
+
 #containers for the functions to dump completed DFs into to be added to a SQL database
 database_names = []
 
